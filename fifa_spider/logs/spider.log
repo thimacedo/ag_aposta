@@ -12,3 +12,16 @@
 2026-06-19 09:08:00 [INFO] Primeira execução: estado salvo, sem comparação
 2026-06-19 09:08:00 [INFO] ✓ Nenhuma mudança desde a última execução
 2026-06-19 09:08:00 [INFO] Captura concluída em 20.5s | Arquivo: capture_2026-06-19_090800.json
+2026-06-19 11:12:13 [INFO] ======================================================================
+2026-06-19 11:12:13 [INFO] INÍCIO DA CAPTURA #2
+2026-06-19 11:12:13 [INFO] ======================================================================
+2026-06-19 11:12:13 [INFO] → Abrindo página: https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL
+2026-06-19 11:12:26 [INFO] Seletor encontrado: div[class*='match-row_matchRowContainer']
+2026-06-19 11:12:30 [INFO] Scroll finalizado. Altura da página: 17930 px
+2026-06-19 11:12:32 [INFO] HTML capturado: 968130 bytes
+2026-06-19 11:12:32 [INFO] Containers de partida encontrados: 104
+2026-06-19 11:12:32 [INFO] Partidas parseadas com sucesso: 104
+2026-06-19 11:12:32 [INFO] JSON salvo: C:\Projetos\ag_aposta\fifa_spider\captures\capture_2026-06-19_111232.json (104 partidas | 28 jogadas | 76 futuras)
+2026-06-19 11:12:32 [INFO] HTML bruto salvo: C:\Projetos\ag_aposta\fifa_spider\raw_html\raw_2026-06-19_111232.html
+2026-06-19 11:12:32 [INFO] ✓ Nenhuma mudança desde a última execução
+2026-06-19 11:12:32 [INFO] Captura concluída em 19.0s | Arquivo: capture_2026-06-19_111232.json
