@@ -64,6 +64,21 @@ def rotina_ingestao_spider() -> dict:
         resultado["sync"] = f"ERRO: {e}"
         if not resultado["erro"]:
             resultado["erro"] = str(e)
+            
+    # Adicionando ingestão de odds aqui
+    try:
+        import fetcher_agent
+        logger.info("→ Buscando odds...")
+        odds = fetcher_agent.extrair_odds_the_odds_api()
+        if odds:
+            n = fetcher_agent.salvar_odds_banco(odds)
+            resultado["odds"] = f"{n} salvas"
+        else:
+            resultado["odds"] = "Sem odds"
+        logger.info(f"✓ Ingestão de odds concluída: {resultado['odds']}")
+    except Exception as e:
+        logger.error("Erro na ingestão de odds: %s", e)
+        resultado["odds"] = f"ERRO: {e}"
 
     elapsed = time.time() - t0
     logger.info("=== Rotação concluída em %.1fs ===", elapsed)

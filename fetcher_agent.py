@@ -67,7 +67,7 @@ COPA_2026_FD_SEASON = 2026
 # The Odds API (500 req/mês)
 THE_ODDS_API_KEY      = os.getenv("THE_ODDS_API_KEY", "")
 THE_ODDS_API_BASE     = os.getenv("THE_ODDS_API_BASE_URL", "https://api.the-odds-api.com/v4")
-THE_ODDS_SPORT        = "soccer_fifa_world_cup_2026"
+THE_ODDS_SPORT        = "soccer_fifa_world_cup"
 
 # API-Football (100 req/dia) — fallback
 API_FOOTBALL_KEY  = os.getenv("API_FOOTBALL_KEY", "")
@@ -385,6 +385,7 @@ def extrair_odds_the_odds_api(regions: str = "eu") -> Optional[list[dict]]:
     if not THE_ODDS_API_KEY:
         logger.warning("[TheOddsAPI] THE_ODDS_API_KEY não configurada. Pulando.")
         return None
+    logger.info(f"[TheOddsAPI] Usando chave: {THE_ODDS_API_KEY[:5]}...")
 
     url = f"{THE_ODDS_API_BASE}/sports/{THE_ODDS_SPORT}/odds/"
     params = {
@@ -406,6 +407,8 @@ def extrair_odds_the_odds_api(regions: str = "eu") -> Optional[list[dict]]:
         resp.raise_for_status()
         _registrar_uso_api("the-odds-api")
         data = resp.json()
+        if not data:
+            logger.warning("[TheOddsAPI] API retornou lista vazia.")
         _salvar_cache("odds_copa2026", data)
         logger.info(f"[TheOddsAPI] {len(data)} eventos retornados.")
         return data
@@ -701,13 +704,15 @@ def salvar_odds_banco(odds_data: list[dict]) -> int:
 
                 if not row:
                     sem_match += 1
-                    logger.debug(f"Sem match: {home_team} vs {away_team}")
+                    logger.info(f"Sem match de time: {home_team} vs {away_team}")
                     continue
 
                 partida_id = row["partida_id"]
 
                 for bkm in event.get("bookmakers", []):
                     casa = bkm.get("key", "unknown")
+                    # Log para diagnostico
+                    logger.info(f"Processando casa: {casa}")
                     odd_m, odd_e, odd_v = 0.0, 0.0, 0.0
                     for mkt in bkm.get("markets", []):
                         if mkt.get("key") == "h2h":
@@ -796,7 +801,9 @@ def rotina_ingestao_diaria() -> dict:
 
     # ── Passo 2: Odds ─────────────────────────────────────────────
     with db.get_connection() as conn:
-        if db.verificar_odds_recentes(conn):
+        eh_recente = db.verificar_odds_recentes(conn)
+        logger.info(f"Odds recentes? {eh_recente}")
+        if eh_recente:
             logger.info("Odds recentes no banco (< 6h). Pulando.")
         else:
             odds = extrair_odds_the_odds_api()

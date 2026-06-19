@@ -72,10 +72,20 @@ def carregar_metricas() -> dict:
         }
 
 
-def carregar_proximos_jogos(limite: int = 20) -> list[dict]:
-    """Carrega próximos jogos agendados (ordenados por data)."""
+def carregar_proximos_jogos(janela_horas: int = 36, limite: int = 50) -> list[dict]:
+    """
+    Carrega próximos jogos dentro da janela temporal, com odds e análises EV+ embutidas.
+
+    janela_horas: quantas horas à frente olhar (padrão 36h = hoje + amanhã).
+    Se janela_horas=0, retorna todos os jogos futuros sem limite de data.
+    """
     with db.get_connection() as conn:
-        query = """
+        if janela_horas > 0:
+            filtro_data = f"AND p.data_evento <= datetime('now', '+{janela_horas} hours')"
+        else:
+            filtro_data = ""
+
+        query = f"""
         SELECT
             p.partida_id,
             p.data_evento,
@@ -92,10 +102,23 @@ def carregar_proximos_jogos(limite: int = 20) -> list[dict]:
             p.cidade,
             p.status_fifa,
             p.score_home,
-            p.score_away
+            p.score_away,
+            MAX(o.odd_mandante)  AS odd_mandante,
+            MAX(o.odd_empate)    AS odd_empate,
+            MAX(o.odd_visitante) AS odd_visitante,
+            COUNT(DISTINCT o.casa_aposta) AS num_casas,
+            GROUP_CONCAT(DISTINCT h.mercado_sugerido) AS mercados_ev,
+            MAX(h.ev_calculado)  AS melhor_ev,
+            MAX(h.stake_kelly)   AS stake_kelly
         FROM partidas_agenda p
-        WHERE p.status_fifa IS NULL
-           OR p.status_fifa != 'FIM'
+        LEFT JOIN odds_mercado o ON p.partida_id = o.partida_id
+        LEFT JOIN historico_analises h
+               ON p.partida_id = h.partida_id
+              AND h.resultado_partida = 'PENDENTE'
+        WHERE (p.status_fifa IS NULL OR p.status_fifa != 'FIM')
+          AND p.data_evento >= datetime('now', '-2 hours')
+          {filtro_data}
+        GROUP BY p.partida_id
         ORDER BY p.data_evento ASC
         LIMIT ?
         """
@@ -151,7 +174,7 @@ def carregar_ultimos_resultados(limite: int = 10) -> list[dict]:
         return [dict(r) for r in conn.execute(query, (limite,)).fetchall()]
 
 
-def carregar_recomendacoes() -> list[dict]:
+def carregar_recomendacoes(apenas_hoje: bool = False) -> list[dict]:
     """Carrega recomendações EV+ pendentes (LEFT JOIN para tolerar placeholders)."""
     with db.get_connection() as conn:
         query = """
@@ -169,8 +192,12 @@ def carregar_recomendacoes() -> list[dict]:
         LEFT JOIN times_performance tm ON p.time_mandante_id = tm.time_id
         LEFT JOIN times_performance tv ON p.time_visitante_id = tv.time_id
         WHERE h.resultado_partida = 'PENDENTE'
-        ORDER BY h.ev_calculado DESC
         """
+        if apenas_hoje:
+            query += " AND date(p.data_evento) = date('now') "
+        
+        query += " ORDER BY h.ev_calculado DESC"
+        
         return [dict(r) for r in conn.execute(query).fetchall()]
 
 
@@ -241,50 +268,145 @@ def main() -> None:
     ])
 
     # ---------------------------------------------------------------------
-    # TAB 1: Próximos jogos
+    # TAB 1: Próximos jogos — foco hoje e amanhã, odds + EV inline
     # ---------------------------------------------------------------------
     with tab_jogos:
-        st.subheader("Próximos jogos agendados")
-        jogos = carregar_proximos_jogos(limite=30)
+        col_foco, col_expand = st.columns([3, 1])
+        with col_foco:
+            st.subheader("📅 Jogos de hoje e amanhã")
+            st.caption(
+                "🔍 **Foco principal:** jogos das próximas 36 horas — onde as odds são "
+                "mais precisas e o modelo tem maior confiança. Jogos futuros ficam "
+                "disponíveis no toggle ao lado, mas as cotações podem variar bastante."
+            )
+        with col_expand:
+            ver_futuros = st.toggle("Ver jogos futuros", value=False)
+
+        janela = 0 if ver_futuros else 36
+        jogos = carregar_proximos_jogos(janela_horas=janela, limite=60)
 
         if not jogos:
-            st.warning("⚠️ Nenhum jogo futuro no banco. Execute o spider em '⚙️ Ações'.")
-        else:
-            st.write(f"Mostrando **{len(jogos)}** jogos:")
-            for j in jogos:
-                home_flag = _flag_img(j.get("flag_url_home"), j.get("codigo_fifa_home"))
-                away_flag = _flag_img(j.get("flag_url_away"), j.get("codigo_fifa_away"))
-                score_home = _score_box(j.get("score_home"), j.get("status_fifa"))
-                score_away = _score_box(j.get("score_away"), j.get("status_fifa"))
-                horario = j.get("horario_kickoff") or "—"
-                fase = j.get("fase") or ""
-                grupo = j.get("grupo") or ""
-                fase_str = f"{fase} {grupo}".strip()
-
-                st.markdown(
-                    f"""
-                    <div style="display:flex;justify-content:space-between;
-                                align-items:center;padding:10px;
-                                border:1px solid #e0e0e0;border-radius:8px;margin:5px 0">
-                        <div style="flex:1;text-align:right">
-                            {home_flag}
-                            <strong style="margin-left:8px">{j['nome_mandante'] or '?'}</strong>
-                        </div>
-                        <div style="margin:0 20px;text-align:center;min-width:120px">
-                            <div style="font-size:18px">{score_home} × {score_away}</div>
-                            <div style="font-size:12px;color:#666">{horario}</div>
-                        </div>
-                        <div style="flex:1">
-                            <strong style="margin-right:8px">{j['nome_visitante'] or '?'}</strong>
-                            {away_flag}
-                        </div>
-                    </div>
-                    <div style="font-size:11px;color:#888;margin:-2px 0 10px 0;text-align:center">
-                        {j['data_evento'][:16] if j['data_evento'] else ''} | {fase_str} | {j['estadio'] or ''} ({j['cidade'] or ''})
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
+            if ver_futuros:
+                st.warning("Nenhum jogo futuro no banco. Execute o spider em '⚙️ Ações'.")
+            else:
+                st.info(
+                    "Nenhum jogo nas próximas 36 horas. "
+                    "Ative **'Ver jogos futuros'** para ampliar a janela, "
+                    "ou execute o spider em '⚙️ Ações' para atualizar os dados."
                 )
+        else:
+            tem_odds = any(j.get("odd_mandante") for j in jogos)
+
+            if ver_futuros:
+                st.info(
+                    f"Mostrando **todos os {len(jogos)} jogos futuros**. "
+                    "Odds para partidas distantes podem não estar disponíveis ainda — "
+                    "o modelo é mais confiável nas próximas 36 horas."
+                )
+            else:
+                st.write(f"**{len(jogos)}** jogo(s) nas próximas 36 horas:")
+
+            if not tem_odds:
+                st.warning(
+                    "Sem odds disponíveis. Execute '⚙️ Ações → Buscar odds' para popular as cotações."
+                )
+
+            from collections import defaultdict
+            from datetime import datetime, date as date_type
+            jogos_por_data: dict = defaultdict(list)
+            for j in jogos:
+                data_key = (j["data_evento"] or "")[:10]
+                jogos_por_data[data_key].append(j)
+
+            for data_key in sorted(jogos_por_data.keys()):
+                grupo_jogos = jogos_por_data[data_key]
+                try:
+                    d = datetime.strptime(data_key, "%Y-%m-%d").date()
+                    hoje = date_type.today()
+                    delta = (d - hoje).days
+                    if delta == 0:
+                        label_data = f"📍 Hoje — {data_key}"
+                    elif delta == 1:
+                        label_data = f"⏭️ Amanhã — {data_key}"
+                    else:
+                        label_data = f"📆 {data_key}"
+                except Exception:
+                    label_data = f"📆 {data_key}"
+
+                st.markdown(f"### {label_data}")
+
+                for j in grupo_jogos:
+                    home_flag  = _flag_img(j.get("flag_url_home"),  j.get("codigo_fifa_home"))
+                    away_flag  = _flag_img(j.get("flag_url_away"),  j.get("codigo_fifa_away"))
+                    horario    = j.get("horario_kickoff") or "—"
+                    fase_str   = f"{j.get('fase') or ''} {j.get('grupo') or ''}".strip()
+
+                    melhor_ev   = j.get("melhor_ev")
+                    stake_kelly = j.get("stake_kelly")
+                    mercados_ev = j.get("mercados_ev") or ""
+                    tem_ev = bool(melhor_ev and melhor_ev > 0)
+
+                    ev_badge = ""
+                    if tem_ev:
+                        ev_pct    = melhor_ev * 100
+                        stake_pct = (stake_kelly or 0) * 100
+                        ev_badge = (
+                            '<div style="text-align:center;margin-top:6px">' +
+                            '<span style="background:#1a7f37;color:#fff;' +
+                            'padding:4px 12px;border-radius:12px;font-size:12px;font-weight:bold">' +
+                            f"⚡ Oportunidade EV+ {ev_pct:.1f}% — Apostar em: {mercados_ev} — "
+                            f"Stake sugerido: {stake_pct:.1f}% da banca" +
+                            '</span></div>'
+                        )
+
+                    odd_m     = j.get("odd_mandante")
+                    odd_e     = j.get("odd_empate")
+                    odd_v     = j.get("odd_visitante")
+                    num_casas = j.get("num_casas") or 0
+
+                    if odd_m and odd_e and odd_v:
+                        odds_html = (
+                            '<div style="display:flex;gap:8px;justify-content:center;margin-top:8px">' +
+                            '<span style="background:#f0f4ff;border:1px solid #c0cfe8;padding:5px 14px;border-radius:6px;font-size:14px">' +
+                            f'<b style="color:#555">1</b>&nbsp;&nbsp;{odd_m:.2f}</span>' +
+                            '<span style="background:#f0f4ff;border:1px solid #c0cfe8;padding:5px 14px;border-radius:6px;font-size:14px">' +
+                            f'<b style="color:#555">X</b>&nbsp;&nbsp;{odd_e:.2f}</span>' +
+                            '<span style="background:#f0f4ff;border:1px solid #c0cfe8;padding:5px 14px;border-radius:6px;font-size:14px">' +
+                            f'<b style="color:#555">2</b>&nbsp;&nbsp;{odd_v:.2f}</span>' +
+                            f'<span style="color:#aaa;font-size:11px;align-self:center">{num_casas} casa(s)</span>' +
+                            '</div>'
+                        )
+                    else:
+                        odds_html = '<div style="text-align:center;margin-top:8px;color:#bbb;font-size:12px">Sem odds disponíveis</div>'
+
+                    borda = "#1a7f37" if tem_ev else "#e0e0e0"
+                    fundo = "#f6fff8" if tem_ev else "#fafafa"
+                    local_str = (j["estadio"] or "") + (" — " if j["estadio"] and j["cidade"] else "") + (j["cidade"] or "")
+
+                    st.markdown(
+                        f'''<div style="border:1.5px solid {borda};border-radius:10px;padding:14px 18px;margin:6px 0;background:{fundo}">
+                            <div style="display:flex;align-items:center;justify-content:space-between">
+                                <div style="flex:1;text-align:right">
+                                    {home_flag}
+                                    <strong style="margin-left:8px">{j["nome_mandante"] or "?"}</strong>
+                                </div>
+                                <div style="margin:0 24px;text-align:center;min-width:90px">
+                                    <div style="font-size:13px;color:#666;font-weight:bold">{horario} BRT</div>
+                                    <div style="font-size:11px;color:#aaa">{fase_str}</div>
+                                </div>
+                                <div style="flex:1">
+                                    <strong style="margin-right:8px">{j["nome_visitante"] or "?"}</strong>
+                                    {away_flag}
+                                </div>
+                            </div>
+                            {odds_html}
+                            {ev_badge}
+                            <div style="font-size:11px;color:#aaa;text-align:center;margin-top:6px">{local_str}</div>
+                        </div>''',
+                        unsafe_allow_html=True,
+                    )
+
+                st.markdown("---")
 
     # ---------------------------------------------------------------------
     # TAB 2: Jogos do Brasil
@@ -345,7 +467,8 @@ def main() -> None:
     # ---------------------------------------------------------------------
     with tab_recs:
         st.subheader("📊 Recomendações com Valor Esperado Positivo (EV+)")
-        recs = carregar_recomendacoes()
+        apenas_hoje = st.checkbox("Apenas jogos de hoje", value=False)
+        recs = carregar_recomendacoes(apenas_hoje=apenas_hoje)
 
         if not recs:
             st.info("Nenhuma análise EV+ ativa. Para gerar, é necessário ter odds no banco "

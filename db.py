@@ -173,11 +173,13 @@ def verificar_partidas_recentes_liga(conn: sqlite3.Connection, liga_id: int) -> 
 
 def verificar_odds_recentes(conn: sqlite3.Connection) -> bool:
     sql = """
-    SELECT count(*) as total FROM odds_mercado
+    SELECT count(*) FROM odds_mercado
     WHERE timestamp_captura > datetime('now', '-6 hours')
     """
     row = conn.execute(sql).fetchone()
-    return row["total"] > 0
+    count = row[0]
+    print(f"DEBUG: Odds count in last 6h: {count}")
+    return count > 0
 
 
 # =====================================================================
