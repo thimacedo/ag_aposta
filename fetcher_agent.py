@@ -87,8 +87,9 @@ MAPEAMENTO_TIMES = {
     "Bolivia": "Bolívia",
     "Bulgaria": "Bulgária",
     "Bosnia & Herzegovina": "Bósnia e Herzegovina",
-    "South Africa": "África do Sul",
-    "Cape Verde": "Cabo Verde"
+    "South Africa": "Africa do Sul",
+    "Cape Verde": "Cabo Verde",
+    "DR Congo": "RD Congo"
 }
 
 def extrair_odds_the_odds_api() -> list[dict]:
