@@ -413,6 +413,25 @@ def main() -> None:
                         unsafe_allow_html=True,
                     )
 
+                    # ==========================================
+                    # NOVO: BOTÃO DE ANÁLISE COM IA MISTRAL
+                    # ==========================================
+                    # Só mostra o botão se houver odds no jogo
+                    if odd_m and odd_e and odd_v:
+                        with st.expander("🧠 Análise Profunda com IA (Mistral)", expanded=False):
+                            # Usa st.cache_data para não chamar a API novamente se o usuário abrir e fechar o mesmo jogo
+                            @st.cache_data(ttl=600, show_spinner="Gerando análise contextual com IA...")
+                            def chamar_ia_mistral(partida_id, odds_md, odds_vt):
+                                from llm_agent import gerar_analise_partida
+                                return gerar_analise_partida(j)
+                            
+                            analise_texto = chamar_ia_mistral(
+                                j["partida_id"], 
+                                j.get("odd_mandante"), 
+                                j.get("odd_visitante")
+                            )
+                            st.markdown(analise_texto)
+
                 st.markdown("---")
 
     # ---------------------------------------------------------------------

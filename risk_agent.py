@@ -57,7 +57,18 @@ def avaliar_oportunidade(
         p_modelo = prob_modelo.get(mercado, 0.0)
         odd = odds_mercado.get(mercado, 0.0)
 
+        # GUARDRAIL: Ignorar se a probabilidade do modelo for muito baixa
+        # e a odd muito alta (evita "taxa de lixo" em zebras improváveis)
+        if p_modelo < 0.05 and odd > 10.0:
+            logger.debug(f"Pulando {mercado}: probabilidade muito baixa ({p_modelo:.1%}) com odd alta ({odd})")
+            continue
+
         stake, ev = core_math.calcular_kelly_fracionado(p_modelo, odd, fracao=fracao_kelly)
+
+        # GUARDRAIL: Limite superior para evitar alucinações matemáticas
+        if ev > 2.0: # 200% de EV é quase certamente um erro de modelo
+            logger.warning(f"EV+ anormalmente alto detectado: {ev:.1%}. Limitando a 200%.")
+            ev = 2.0
 
         if ev > 0.0:
             oportunidades.append({
