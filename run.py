@@ -7,7 +7,7 @@ import os
 import requests
 import psutil
 
-API_PORT = 8000
+API_PORT = 8001
 API_URL = f"http://localhost:{API_PORT}"
 STARTUP_TIMEOUT = 15   # segundos esperando a API subir
 HEALTH_INTERVAL = 5    # segundos entre verificações de saúde
@@ -74,7 +74,7 @@ def run():
         print("[run] Iniciando API (uvicorn)...")
         return subprocess.Popen(
             [VENV_PYTHON, "-m", "uvicorn", "api.main:app",
-             "--host", "127.0.0.1", "--port", str(API_PORT)],
+             "--host", "127.0.0.1", "--port", str(API_PORT), "--workers", "1"],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
         )
@@ -105,7 +105,8 @@ def run():
         if api.poll() is not None:
             stderr = api.stderr.read().decode(errors="replace")
             print(f"[run] AVISO: API morreu. Erro:\n{stderr}")
-            print("[run] Reiniciando...")
+            print("[run] Reiniciando em 5 segundos...")
+            time.sleep(5) # Aguarda TIME_WAIT
             processos.remove(api)
             matar_porta(API_PORT)
             api = start_api()

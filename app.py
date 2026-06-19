@@ -364,6 +364,8 @@ def main() -> None:
                     odd_v     = j.get("odd_visitante")
                     num_casas = j.get("num_casas") or 0
 
+                    # ... (mantendo o código anterior)
+                    
                     if odd_m and odd_e and odd_v:
                         odds_html = (
                             '<div style="display:flex;gap:8px;justify-content:center;margin-top:8px">' +
@@ -383,25 +385,30 @@ def main() -> None:
                     fundo = "#f6fff8" if tem_ev else "#fafafa"
                     local_str = (j["estadio"] or "") + (" — " if j["estadio"] and j["cidade"] else "") + (j["cidade"] or "")
 
+                    # Escapando nomes dos times para evitar quebras de HTML
+                    import html
+                    nome_m = html.escape(j.get("nome_mandante") or "?")
+                    nome_v = html.escape(j.get("nome_visitante") or "?")
+                    
                     st.markdown(
                         f'''<div style="border:1.5px solid {borda};border-radius:10px;padding:14px 18px;margin:6px 0;background:{fundo}">
                             <div style="display:flex;align-items:center;justify-content:space-between">
                                 <div style="flex:1;text-align:right">
                                     {home_flag}
-                                    <strong style="margin-left:8px">{j["nome_mandante"] or "?"}</strong>
+                                    <strong style="margin-left:8px">{nome_m}</strong>
                                 </div>
                                 <div style="margin:0 24px;text-align:center;min-width:90px">
                                     <div style="font-size:13px;color:#666;font-weight:bold">{horario} BRT</div>
                                     <div style="font-size:11px;color:#aaa">{fase_str}</div>
                                 </div>
                                 <div style="flex:1">
-                                    <strong style="margin-right:8px">{j["nome_visitante"] or "?"}</strong>
+                                    <strong style="margin-right:8px">{nome_v}</strong>
                                     {away_flag}
                                 </div>
                             </div>
                             {odds_html}
                             {ev_badge}
-                            <div style="font-size:11px;color:#aaa;text-align:center;margin-top:6px">{local_str}</div>
+                            <div style="font-size:11px;color:#aaa;text-align:center;margin-top:6px">{html.escape(local_str)}</div>
                         </div>''',
                         unsafe_allow_html=True,
                     )
