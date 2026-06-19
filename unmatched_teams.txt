@@ -1,0 +1,45 @@
+
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: USA vs Australia
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Scotland vs Morocco
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Brazil vs Haiti
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Turkey vs Paraguay
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Netherlands vs Sweden
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Germany vs Ivory Coast
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Ecuador vs Curaþao
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Tunisia vs Japan
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Spain vs Saudi Arabia
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Belgium vs Iran
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Uruguay vs Cape Verde
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: New Zealand vs Egypt
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Argentina vs Austria
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: France vs Iraq
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Norway vs Senegal
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Jordan vs Algeria
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Portugal vs Uzbekistan
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: England vs Ghana
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Panama vs Croatia
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Colombia vs DR Congo
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Bosnia & Herzegovina vs Qatar
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Switzerland vs Canada
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Scotland vs Brazil
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Morocco vs Haiti
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Czech Republic vs Mexico
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: South Africa vs South Korea
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Curaþao vs Ivory Coast
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Ecuador vs Germany
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Japan vs Sweden
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Tunisia vs Netherlands
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Paraguay vs Australia
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Turkey vs USA
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Norway vs France
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Cape Verde vs Saudi Arabia
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Uruguay vs Spain
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: New Zealand vs Belgium
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Egypt vs Iran
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Croatia vs Ghana
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Panama vs England
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Colombia vs Portugal
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: DR Congo vs Uzbekistan
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Algeria vs Austria
+2026-06-19 14:45:28 [INFO] fetcher_agent: Sem match de time: Jordan vs Argentina
+

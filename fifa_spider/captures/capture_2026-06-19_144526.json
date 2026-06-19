@@ -1,4 +1,15 @@
 {
+  "capture_timestamp": "2026-06-19T14:45:26.605382-03:00",
+  "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL",
+  "capture_count_total": 13,
+  "stats": {
+    "matches_found": 104,
+    "matches_played": 28,
+    "matches_upcoming": 76,
+    "matches_live": 0,
+    "html_size_bytes": 967474,
+    "next_data_available": false
+  },
   "matches": [
     {
       "match_id": "2260994967e79211",
@@ -2496,6 +2507,5 @@
       "date": "2026-07-19",
       "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
     }
-  ],
-  "saved_at": "2026-06-19T14:59:31.005250-03:00"
+  ]
 }
