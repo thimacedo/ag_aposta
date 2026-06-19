@@ -268,171 +268,212 @@ def main() -> None:
     ])
 
     # ---------------------------------------------------------------------
-    # TAB 1: Próximos jogos — foco hoje e amanhã, odds + EV inline
+    # ---------------------------------------------------------------------
+    # TAB 1: PRÓXIMOS JOGOS (Navegação Dinâmica: Lista -> Detalhes)
     # ---------------------------------------------------------------------
     with tab_jogos:
-        col_foco, col_expand = st.columns([3, 1])
-        with col_foco:
-            st.subheader("📅 Jogos de hoje e amanhã")
-            st.caption(
-                "🔍 **Foco principal:** jogos das próximas 36 horas — onde as odds são "
-                "mais precisas e o modelo tem maior confiança. Jogos futuros ficam "
-                "disponíveis no toggle ao lado, mas as cotações podem variar bastante."
-            )
-        with col_expand:
-            ver_futuros = st.toggle("Ver jogos futuros", value=False)
+        # Inicializa o estado de navegação na primeira vez
+        if 'selected_match_id' not in st.session_state:
+            st.session_state.selected_match_id = None
 
-        janela = 0 if ver_futuros else 36
-        jogos = carregar_proximos_jogos(janela_horas=janela, limite=60)
+        # ==========================================
+        # TELA 2: DETALHES DO JOGO (Menu Clicável)
+        # ==========================================
+        if st.session_state.selected_match_id:
+            match_id = st.session_state.selected_match_id
+            # Encontra os dados do jogo clicado
+            match_data = next((j for j in jogos if j['partida_id'] == match_id), None)
 
-        if not jogos:
-            if ver_futuros:
-                st.warning("Nenhum jogo futuro no banco. Execute o spider em '⚙️ Ações'.")
-            else:
-                st.info(
-                    "Nenhum jogo nas próximas 36 horas. "
-                    "Ative **'Ver jogos futuros'** para ampliar a janela, "
-                    "ou execute o spider em '⚙️ Ações' para atualizar os dados."
-                )
-        else:
-            tem_odds = any(j.get("odd_mandante") for j in jogos)
+            if match_data:
+                # Botão de Voltar
+                if st.button("← Voltar para a lista de jogos", use_container_width=True):
+                    st.session_state.selected_match_id = None
+                    st.rerun()
+                
+                # Extrai variáveis do jogo selecionado
+                j = match_data
+                home_flag  = _flag_img(j.get("flag_url_home"),  j.get("codigo_fifa_home"))
+                away_flag  = _flag_img(j.get("flag_url_away"),  j.get("codigo_fifa_away"))
+                horario    = j.get("horario_kickoff") or "—"
+                fase_str   = f"{j.get('fase') or ''} {j.get('grupo') or ''}".strip()
+                melhor_ev   = j.get("melhor_ev")
+                stake_kelly = j.get("stake_kelly")
+                mercados_ev = j.get("mercados_ev") or ""
+                tem_ev = bool(melhor_ev and melhor_ev > 0)
+                odd_m     = j.get("odd_mandante")
+                odd_e     = j.get("odd_empate")
+                odd_v     = j.get("odd_visitante")
+                num_casas = j.get("num_casas") or 0
 
-            if ver_futuros:
-                st.info(
-                    f"Mostrando **todos os {len(jogos)} jogos futuros**. "
-                    "Odds para partidas distantes podem não estar disponíveis ainda — "
-                    "o modelo é mais confiável nas próximas 36 horas."
-                )
-            else:
-                st.write(f"**{len(jogos)}** jogo(s) nas próximas 36 horas:")
+                # Formata o Badge de EV (se houver)
+                ev_badge = ""
+                if tem_ev:
+                    ev_pct = melhor_ev * 100
+                    stake_pct = (stake_kelly or 0) * 100
+                    ev_badge = f'<div style="text-align:center;margin-top:12px"><span style="background:#1a7f37;color:#fff;padding:6px 16px;border-radius:12px;font-size:14px;font-weight:bold">⚡ Oportunidade EV+ {ev_pct:.1f}% — {mercados_ev} — Stake: {stake_pct:.1f}%</span></div>'
 
-            if not tem_odds:
-                st.warning(
-                    "Sem odds disponíveis. Execute '⚙️ Ações → Buscar odds' para popular as cotações."
-                )
-
-            from collections import defaultdict
-            from datetime import datetime, date as date_type
-            jogos_por_data: dict = defaultdict(list)
-            for j in jogos:
-                data_key = (j["data_evento"] or "")[:10]
-                jogos_por_data[data_key].append(j)
-
-            for data_key in sorted(jogos_por_data.keys()):
-                grupo_jogos = jogos_por_data[data_key]
-                try:
-                    d = datetime.strptime(data_key, "%Y-%m-%d").date()
-                    hoje = date_type.today()
-                    delta = (d - hoje).days
-                    if delta == 0:
-                        label_data = f"📍 Hoje — {data_key}"
-                    elif delta == 1:
-                        label_data = f"⏭️ Amanhã — {data_key}"
-                    else:
-                        label_data = f"📆 {data_key}"
-                except Exception:
-                    label_data = f"📆 {data_key}"
-
-                st.markdown(f"### {label_data}")
-
-                for j in grupo_jogos:
-                    home_flag  = _flag_img(j.get("flag_url_home"),  j.get("codigo_fifa_home"))
-                    away_flag  = _flag_img(j.get("flag_url_away"),  j.get("codigo_fifa_away"))
-                    horario    = j.get("horario_kickoff") or "—"
-                    fase_str   = f"{j.get('fase') or ''} {j.get('grupo') or ''}".strip()
-
-                    melhor_ev   = j.get("melhor_ev")
-                    stake_kelly = j.get("stake_kelly")
-                    mercados_ev = j.get("mercados_ev") or ""
-                    tem_ev = bool(melhor_ev and melhor_ev > 0)
-
-                    ev_badge = ""
-                    if tem_ev:
-                        ev_pct    = melhor_ev * 100
-                        stake_pct = (stake_kelly or 0) * 100
-                        ev_badge = (
-                            '<div style="text-align:center;margin-top:6px">' +
-                            '<span style="background:#1a7f37;color:#fff;' +
-                            'padding:4px 12px;border-radius:12px;font-size:12px;font-weight:bold">' +
-                            f"⚡ Oportunidade EV+ {ev_pct:.1f}% — Apostar em: {mercados_ev} — "
-                            f"Stake sugerido: {stake_pct:.1f}% da banca" +
-                            '</span></div>'
-                        )
-
-                    odd_m     = j.get("odd_mandante")
-                    odd_e     = j.get("odd_empate")
-                    odd_v     = j.get("odd_visitante")
-                    num_casas = j.get("num_casas") or 0
-
-                    # ... (mantendo o código anterior)
-                    
-                    if odd_m and odd_e and odd_v:
-                        odds_html = (
-                            '<div style="display:flex;gap:8px;justify-content:center;margin-top:8px">' +
-                            '<span style="background:#f0f4ff;border:1px solid #c0cfe8;padding:5px 14px;border-radius:6px;font-size:14px">' +
-                            f'<b style="color:#555">1</b>&nbsp;&nbsp;{odd_m:.2f}</span>' +
-                            '<span style="background:#f0f4ff;border:1px solid #c0cfe8;padding:5px 14px;border-radius:6px;font-size:14px">' +
-                            f'<b style="color:#555">X</b>&nbsp;&nbsp;{odd_e:.2f}</span>' +
-                            '<span style="background:#f0f4ff;border:1px solid #c0cfe8;padding:5px 14px;border-radius:6px;font-size:14px">' +
-                            f'<b style="color:#555">2</b>&nbsp;&nbsp;{odd_v:.2f}</span>' +
-                            f'<span style="color:#aaa;font-size:11px;align-self:center">{num_casas} casa(s)</span>' +
-                            '</div>'
-                        )
-                    else:
-                        odds_html = '<div style="text-align:center;margin-top:8px;color:#bbb;font-size:12px">Sem odds disponíveis</div>'
-
-                    borda = "#1a7f37" if tem_ev else "#e0e0e0"
-                    fundo = "#f6fff8" if tem_ev else "#fafafa"
-                    local_str = (j["estadio"] or "") + (" — " if j["estadio"] and j["cidade"] else "") + (j["cidade"] or "")
-
-                    # Escapando nomes dos times para evitar quebras de HTML
-                    import html
-                    nome_m = html.escape(j.get("nome_mandante") or "?")
-                    nome_v = html.escape(j.get("nome_visitante") or "?")
-                    
-                    st.markdown(
-                        f'''<div style="border:1.5px solid {borda};border-radius:10px;padding:14px 18px;margin:6px 0;background:{fundo}">
-                            <div style="display:flex;align-items:center;justify-content:space-between">
-                                <div style="flex:1;text-align:right">
-                                    {home_flag}
-                                    <strong style="margin-left:8px">{nome_m}</strong>
-                                </div>
-                                <div style="margin:0 24px;text-align:center;min-width:90px">
-                                    <div style="font-size:13px;color:#666;font-weight:bold">{horario} BRT</div>
-                                    <div style="font-size:11px;color:#aaa">{fase_str}</div>
-                                </div>
-                                <div style="flex:1">
-                                    <strong style="margin-right:8px">{nome_v}</strong>
-                                    {away_flag}
-                                </div>
-                            </div>
-                            {odds_html}
-                            {ev_badge}
-                            <div style="font-size:11px;color:#aaa;text-align:center;margin-top:6px">{html.escape(local_str)}</div>
-                        </div>''',
-                        unsafe_allow_html=True,
+                # Formata as Odds Maiores
+                if odd_m and odd_e and odd_v:
+                    odds_html = (
+                        '<div style="display:flex;gap:12px;justify-content:center;margin-top:14px">' +
+                        '<span style="background:#f0f4ff;border:1px solid #c0cfe8;padding:10px 24px;border-radius:8px;font-size:18px;font-weight:bold">' +
+                        f'1 &nbsp; {odd_m:.2f}</span>' +
+                        '<span style="background:#f0f4ff;border:1px solid #c0cfe8;padding:10px 24px;border-radius:8px;font-size:18px;font-weight:bold">' +
+                        f'X &nbsp; {odd_e:.2f}</span>' +
+                        '<span style="background:#f0f4ff;border:1px solid #c0cfe8;padding:10px 24px;border-radius:8px;font-size:18px;font-weight:bold">' +
+                        f'2 &nbsp; {odd_v:.2f}</span>' +
+                        f'<span style="color:#aaa;font-size:12px;align-self:center; margin-left:10px">{num_casas} casas</span>' +
+                        '</div>'
                     )
+                else:
+                    odds_html = '<div style="text-align:center;margin-top:14px;color:#bbb;font-size:14px">Sem odds disponíveis</div>'
 
-                    # ==========================================
-                    # NOVO: BOTÃO DE ANÁLISE COM IA MISTRAL
-                    # ==========================================
-                    # Só mostra o botão se houver odds no jogo
-                    if odd_m and odd_e and odd_v:
-                        with st.expander("🧠 Análise Profunda com IA (Mistral)", expanded=False):
-                            # Usa st.cache_data para não chamar a API novamente se o usuário abrir e fechar o mesmo jogo
-                            @st.cache_data(ttl=600, show_spinner="Gerando análise contextual com IA...")
-                            def chamar_ia_mistral(partida_id, odds_md, odds_vt):
-                                from llm_agent import gerar_analise_partida
-                                return gerar_analise_partida(j)
-                            
-                            analise_texto = chamar_ia_mistral(
-                                j["partida_id"], 
-                                j.get("odd_mandante"), 
-                                j.get("odd_visitante")
-                            )
-                            st.markdown(analise_texto)
+                borda = "#1a7f37" if tem_ev else "#e0e0e0"
+                fundo = "#f6fff8" if tem_ev else "#fafafa"
+                local_str = (j["estadio"] or "") + (" — " if j["estadio"] and j["cidade"] else "") + (j["cidade"] or "")
 
-                st.markdown("---")
+                # Card Grande do Jogo
+                st.markdown(
+                    f'''<div style="border:2px solid {borda};border-radius:14px;padding:28px;background:{fundo};margin-top:10px">
+                        <div style="display:flex;align-items:center;justify-content:space-between">
+                            <div style="flex:1;text-align:right">
+                                {home_flag}
+                                <strong style="margin-left:12px;font-size:22px">{j["nome_mandante"]}</strong>
+                            </div>
+                            <div style="margin:0 40px;text-align:center;min-width:110px">
+                                <div style="font-size:20px;color:#333;font-weight:bold">{horario} BRT</div>
+                                <div style="font-size:13px;color:#888;margin-top:4px">{fase_str}</div>
+                            </div>
+                            <div style="flex:1">
+                                <strong style="margin-right:12px;font-size:22px">{j["nome_visitante"]}</strong>
+                                {away_flag}
+                            </div>
+                        </div>
+                        {odds_html}
+                        {ev_badge}
+                        <div style="font-size:13px;color:#888;text-align:center;margin-top:14px">{local_str}</div>
+                    </div>''',
+                    unsafe_allow_html=True,
+                )
+
+                # ==========================================
+                # RODAPÉ DO JOGO: IA + HEDGE
+                # ==========================================
+                if odd_m and odd_e and odd_v:
+                    with st.expander("🧠 Análise Rápida + 🛡️ Cash Out (Hedge)", expanded=False):
+                        odd_base_ev = odd_m
+                        if "VISITANTE" in mercados_ev: odd_base_ev = odd_v
+                        elif "EMPATE" in mercados_ev: odd_base_ev = odd_e
+                        odd_contraria = odd_v if "MANDANTE" in mercados_ev else odd_m
+
+                        c1, c2, c3 = st.columns(3)
+                        with c1:
+                            stake_input = st.number_input("Sua Aposta (R$)", min_value=1.0, value=100.0, step=10.0, key=f"stk_{j['partida_id']}")
+                        with c2:
+                            odd_aposta_input = st.number_input("Odd da Aposta", min_value=1.01, value=float(odd_base_ev), step=0.01, key=f"od1_{j['partida_id']}")
+                        with c3:
+                            odd_hedge_input = st.number_input("Odd p/ Cobrir", min_value=1.01, value=float(odd_contraria), step=0.01, key=f"od2_{j['partida_id']}")
+
+                        retorno_base = stake_input * odd_aposta_input
+                        stake_hedge_calc = retorno_base / odd_hedge_input
+                        lucro_garantido = retorno_base - (stake_input + stake_hedge_calc)
+                        
+                        if lucro_garantido > 0:
+                            st.success(f"✅ **Cash Out Viável Agora:** Aposte **R$ {stake_hedge_calc:.2f}** na odd contrária para garantir **R$ {lucro_garantido:.2f}** de lucro líquido.")
+                        else:
+                            st.info(f"⏳ **Sem lucro pré-jogo.** Espere o jogo começar. Se o favorito fizer gol cedo, a odd contrária sobe e aí você usa essa calculadora para travar o lucro.")
+
+                        st.divider()
+                        
+                        @st.cache_data(ttl=600, show_spinner="Consultando especialista...")
+                        def chamar_ia_unificada(pid, s, oh, lg, sh):
+                            from llm_agent import gerar_analise_com_hedge
+                            return gerar_analise_com_hedge(j, s, oh, lg, sh)
+                        
+                        analise_texto = chamar_ia_unificada(j["partida_id"], stake_input, odd_hedge_input, lucro_garantido, stake_hedge_calc)
+                        st.markdown(analise_texto)
+
+            else:
+                st.warning("Jogo não encontrado.")
+                st.session_state.selected_match_id = None
+                st.rerun()
+
+
+        # ==========================================
+        # TELA 1: LISTA LIMPA DE JOGOS (Início Rápido)
+        # ==========================================
+        else:
+            col_foco, col_expand = st.columns([4, 1])
+            with col_foco:
+                st.markdown("### ⚽ Próximos Jogos")
+            with col_expand:
+                ver_futuros = st.toggle("Todos os jogos", value=False)
+
+            janela = 0 if ver_futuros else 36
+            jogos = carregar_proximos_jogos(janela_horas=janela, limite=60)
+
+            if not jogos:
+                st.info("Nenhum jogo nas próximas 36 horas. Ative 'Todos os jogos' ou execute o spider.")
+            else:
+                # CSS para deixar os botões parecidos com um App de celular
+                st.markdown("""
+                <style>
+                    div.stButton > button[kind="secondary"] {
+                        width: 100%;
+                        text-align: left;
+                        padding: 14px 20px;
+                        border: 1px solid #f0f0f0;
+                        border-radius: 10px;
+                        background-color: #ffffff;
+                        transition: all 0.2s;
+                        font-size: 15px;
+                    }
+                    div.stButton > button[kind="secondary"]:hover {
+                        background-color: #f8f9fa;
+                        border-color: #d0d0d0;
+                        transform: translateY(-1px);
+                        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+                    }
+                </style>
+                """, unsafe_allow_html=True)
+
+                from collections import defaultdict
+                from datetime import datetime, date as date_type
+                jogos_por_data: dict = defaultdict(list)
+                for j in jogos:
+                    data_key = (j["data_evento"] or "")[:10]
+                    jogos_por_data[data_key].append(j)
+
+                for data_key in sorted(jogos_por_data.keys()):
+                    grupo_jogos = jogos_por_data[data_key]
+                    try:
+                        d = datetime.strptime(data_key, "%Y-%m-%d").date()
+                        delta = (d - date_type.today()).days
+                        label_data = "📍 Hoje" if delta == 0 else ("⏭️ Amanhã" if delta == 1 else f"📆 {data_key}")
+                    except Exception:
+                        label_data = f"📆 {data_key}"
+
+                    st.markdown(f"**{label_data}**")
+
+                    for j in grupo_jogos:
+                        horario = j.get("horario_kickoff") or "--:--"
+                        m = j.get("nome_mandante") or "?"
+                        v = j.get("nome_visitante") or "?"
+                        tem_odds = bool(j.get("odd_mandante"))
+                        
+                        # Badges rápidos na lista
+                        badge = ""
+                        if j.get("melhor_ev") and j.get("melhor_ev") > 0:
+                            badge = " ⚡EV+"
+                        elif not tem_odds:
+                            badge = " (Sem odds)"
+                        
+                        # O botão que serve como a linha do menu
+                        label_btn = f"⏰ {horario}  —  {m}  vs  {v}{badge}"
+                        
+                        if st.button(label_btn, key=f"row_{j['partida_id']}", use_container_width=True):
+                            st.session_state.selected_match_id = j['partida_id']
+                            st.rerun()
 
     # ---------------------------------------------------------------------
     # TAB 2: Jogos do Brasil
