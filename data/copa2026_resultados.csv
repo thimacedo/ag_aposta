@@ -1,0 +1,34 @@
+partida_id,grupo,fase,data_evento,estadio,mandante,visitante,gols_m,gols_v,xg_m,xg_v,resultado,time_id_mandante,time_id_visitante
+1,A,GRUPO,2026-06-11 14:00,"Estádio Azteca, Cidade do México",México,África do Sul,2.0,0.0,1.8,0.4,MANDANTE,1,2
+2,A,GRUPO,2026-06-11 21:00,"Estádio Akron, Guadalajara",Coreia do Sul,República Tcheca,2.0,1.0,1.5,0.9,MANDANTE,3,4
+3,B,GRUPO,2026-06-12 14:00,"BMO Field, Toronto",Canadá,Bósnia e Herzegovina,1.0,1.0,1.1,1.0,EMPATE,5,6
+4,D,GRUPO,2026-06-12 20:00,"SoFi Stadium, Inglewood",Estados Unidos,Paraguai,4.0,1.0,2.5,0.8,MANDANTE,13,14
+5,B,GRUPO,2026-06-13 14:00,"Levi's Stadium, Santa Clara",Catar,Suíça,1.0,1.0,0.9,1.2,EMPATE,7,8
+6,C,GRUPO,2026-06-13 17:00,"MetLife Stadium, East Rutherford",Brasil,Marrocos,1.0,1.0,1.4,1.1,EMPATE,9,10
+7,C,GRUPO,2026-06-13 20:00,"Gillette Stadium, Foxborough",Haiti,Escócia,0.0,1.0,0.3,1.5,VISITANTE,11,12
+8,D,GRUPO,2026-06-13 23:00,"BC Place, Vancouver",Austrália,Turquia,2.0,0.0,1.6,0.7,MANDANTE,15,16
+9,E,GRUPO,2026-06-14 12:00,"NRG Stadium, Houston",Alemanha,Curaçao,7.0,1.0,3.8,0.5,MANDANTE,17,18
+10,F,GRUPO,2026-06-14 15:00,"AT&T Stadium, Arlington",Holanda,Japão,2.0,2.0,1.9,1.8,EMPATE,21,22
+11,E,GRUPO,2026-06-14 18:00,"Lincoln Financial Field, Filadélfia",Costa do Marfim,Equador,1.0,0.0,1.2,0.8,MANDANTE,19,20
+12,F,GRUPO,2026-06-14 21:00,"Estádio BBVA, Monterrey",Suécia,Tunísia,5.0,1.0,2.9,0.6,MANDANTE,23,24
+13,H,GRUPO,2026-06-15 11:00,"Mercedes-Benz Stadium, Atlanta",Espanha,Cabo Verde,0.0,0.0,1.1,0.2,EMPATE,29,30
+14,I,GRUPO,2026-06-16 16:00,"MetLife Stadium, East Rutherford",França,Senegal,3.0,1.0,2.1,0.9,MANDANTE,33,34
+15,I,GRUPO,2026-06-16 19:00,"Gillette Stadium, Foxborough",Iraque,Noruega,1.0,4.0,0.6,2.3,VISITANTE,35,36
+16,J,GRUPO,2026-06-16 22:00,"Arrowhead Stadium, Kansas City",Argentina,Argélia,3.0,0.0,2.4,0.4,MANDANTE,37,38
+17,J,GRUPO,2026-06-17 01:00,"Levi's Stadium, Santa Clara",Áustria,Jordânia,3.0,1.0,2.0,0.8,MANDANTE,39,40
+18,K,GRUPO,2026-06-17 14:00,"NRG Stadium, Houston",Portugal,RD Congo,1.0,1.0,1.5,1.0,EMPATE,41,42
+19,L,GRUPO,2026-06-17 17:00,"AT&T Stadium, Arlington",Inglaterra,Croácia,4.0,2.0,2.7,1.2,MANDANTE,45,46
+20,L,GRUPO,2026-06-17 20:00,"BMO Field, Toronto",Gana,Panamá,1.0,0.0,1.3,0.5,MANDANTE,47,48
+21,K,GRUPO,2026-06-17 23:00,"Estádio Azteca, Cidade do México",Uzbequistão,Colômbia,1.0,3.0,0.8,2.1,VISITANTE,43,44
+22,A,GRUPO,2026-06-18 13:00,"Mercedes-Benz Stadium, Atlanta",República Tcheca,África do Sul,1.0,1.0,1.2,1.1,EMPATE,4,2
+23,B,GRUPO,2026-06-18 16:00,"SoFi Stadium, Inglewood",Suíça,Bósnia e Herzegovina,4.0,1.0,2.5,0.8,MANDANTE,8,6
+24,B,GRUPO,2026-06-18 19:00,"BC Place, Vancouver",Canadá,Catar,6.0,0.0,3.5,0.2,MANDANTE,5,7
+25,A,GRUPO,2026-06-18 22:00,"Estádio Akron, Guadalajara",México,Coreia do Sul,0.0,0.0,0.5,0.5,EMPATE,1,3
+26,D,GRUPO,2026-06-19 16:00,"Lumen Field, Seattle",Estados Unidos,Austrália,,,,,PENDENTE,13,15
+27,C,GRUPO,2026-06-19 19:00,"Gillette Stadium, Foxborough",Escócia,Marrocos,,,,,PENDENTE,12,10
+28,C,GRUPO,2026-06-19 21:30,"Lincoln Financial Field, Filadélfia",Brasil,Haiti,,,,,PENDENTE,9,11
+29,D,GRUPO,2026-06-20 00:00,"Levi's Stadium, Santa Clara",Turquia,Paraguai,,,,,PENDENTE,16,14
+30,F,GRUPO,2026-06-20 14:00,"NRG Stadium, Houston",Holanda,Suécia,,,,,PENDENTE,21,23
+31,E,GRUPO,2026-06-20 17:00,"BMO Field, Toronto",Alemanha,Costa do Marfim,,,,,PENDENTE,17,19
+32,E,GRUPO,2026-06-20 21:00,"Arrowhead Stadium, Kansas City",Equador,Curaçao,,,,,PENDENTE,20,18
+33,F,GRUPO,2026-06-21 01:00,"Estádio BBVA, Monterrey",Tunísia,Japão,,,,,PENDENTE,24,22

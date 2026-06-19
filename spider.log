@@ -1,0 +1,27 @@
+2026-06-19 10:45:53 [INFO] ======================================================================
+2026-06-19 10:45:53 [INFO] INÍCIO DA CAPTURA #1
+2026-06-19 10:45:53 [INFO] ======================================================================
+2026-06-19 10:45:53 [INFO] → Abrindo página: https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL
+2026-06-19 10:45:59 [INFO] Seletor encontrado: div[class*='match-row_matchRowContainer']
+2026-06-19 10:46:03 [INFO] Scroll finalizado. Altura da página: 17930 px
+2026-06-19 10:46:05 [INFO] HTML capturado: 991941 bytes
+2026-06-19 10:46:05 [INFO] Containers de partida encontrados: 104
+2026-06-19 10:46:05 [INFO] Partidas parseadas com sucesso: 104
+2026-06-19 10:46:05 [INFO] JSON salvo: /home/z/my-project/download/fifa_spider/captures/capture_2026-06-19_074605.json (104 partidas | 28 jogadas | 76 futuras)
+2026-06-19 10:46:05 [INFO] HTML bruto salvo: /home/z/my-project/download/fifa_spider/raw_html/raw_2026-06-19_074605.html
+2026-06-19 10:46:05 [INFO] Primeira execução: estado salvo, sem comparação
+2026-06-19 10:46:05 [INFO] ✓ Nenhuma mudança desde a última execução
+2026-06-19 10:46:05 [INFO] Captura concluída em 11.7s | Arquivo: capture_2026-06-19_074605.json
+2026-06-19 10:46:27 [INFO] ======================================================================
+2026-06-19 10:46:27 [INFO] INÍCIO DA CAPTURA #2
+2026-06-19 10:46:27 [INFO] ======================================================================
+2026-06-19 10:46:27 [INFO] → Abrindo página: https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL
+2026-06-19 10:46:32 [INFO] Seletor encontrado: div[class*='match-row_matchRowContainer']
+2026-06-19 10:46:36 [INFO] Scroll finalizado. Altura da página: 17930 px
+2026-06-19 10:46:38 [INFO] HTML capturado: 1012209 bytes
+2026-06-19 10:46:38 [INFO] Containers de partida encontrados: 104
+2026-06-19 10:46:38 [INFO] Partidas parseadas com sucesso: 104
+2026-06-19 10:46:38 [INFO] JSON salvo: /home/z/my-project/download/fifa_spider/captures/capture_2026-06-19_074638.json (104 partidas | 28 jogadas | 76 futuras)
+2026-06-19 10:46:38 [INFO] HTML bruto salvo: /home/z/my-project/download/fifa_spider/raw_html/raw_2026-06-19_074638.html
+2026-06-19 10:46:38 [INFO] ✓ Nenhuma mudança desde a última execução
+2026-06-19 10:46:38 [INFO] Captura concluída em 11.3s | Arquivo: capture_2026-06-19_074638.json

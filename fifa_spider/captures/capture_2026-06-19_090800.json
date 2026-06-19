@@ -1,0 +1,2511 @@
+{
+  "capture_timestamp": "2026-06-19T09:08:00.666437-03:00",
+  "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL",
+  "capture_count_total": 1,
+  "stats": {
+    "matches_found": 104,
+    "matches_played": 28,
+    "matches_upcoming": 76,
+    "matches_live": 0,
+    "html_size_bytes": 991981,
+    "next_data_available": false
+  },
+  "matches": [
+    {
+      "match_id": "2260994967e79211",
+      "match_index": 1,
+      "home_team": {
+        "code": "MEX",
+        "name": "México",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX"
+      },
+      "away_team": {
+        "code": "RSA",
+        "name": "África do Sul",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA"
+      },
+      "score_home": "2",
+      "score_away": "0",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo A",
+      "stadium": "Estádio da Cidade do México",
+      "city": "Cidade do México",
+      "date": "2026-06-11",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "6273b1201dc8e90d",
+      "match_index": 2,
+      "home_team": {
+        "code": "KOR",
+        "name": "República da Coreia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR"
+      },
+      "away_team": {
+        "code": "CZE",
+        "name": "Tchéquia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CZE"
+      },
+      "score_home": "2",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo A",
+      "stadium": "Estádio de Guadalajara",
+      "city": "Guadalajara",
+      "date": "2026-06-11",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "75a805ce3f277113",
+      "match_index": 3,
+      "home_team": {
+        "code": "CAN",
+        "name": "Canadá",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN"
+      },
+      "away_team": {
+        "code": "BIH",
+        "name": "Bósnia e Herzegovina",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/BIH"
+      },
+      "score_home": "1",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo B",
+      "stadium": "Estádio de Toronto",
+      "city": "Toronto",
+      "date": "2026-06-12",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "8ef779fc4d00e0ce",
+      "match_index": 4,
+      "home_team": {
+        "code": "USA",
+        "name": "EUA",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA"
+      },
+      "away_team": {
+        "code": "PAR",
+        "name": "Paraguai",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAR"
+      },
+      "score_home": "4",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo D",
+      "stadium": "Estádio de Los Angeles",
+      "city": "Los Angeles",
+      "date": "2026-06-12",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "bec1a7a30ec7a55b",
+      "match_index": 5,
+      "home_team": {
+        "code": "QAT",
+        "name": "Catar",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/QAT"
+      },
+      "away_team": {
+        "code": "SUI",
+        "name": "Suíça",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
+      },
+      "score_home": "1",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo B",
+      "stadium": "Estádio da Baía de São Francisco",
+      "city": "Área da baía de São Francisco",
+      "date": "2026-06-13",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "9b370b2a5884d3df",
+      "match_index": 6,
+      "home_team": {
+        "code": "BRA",
+        "name": "Brasil",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
+      },
+      "away_team": {
+        "code": "MAR",
+        "name": "Marrocos",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
+      },
+      "score_home": "1",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo C",
+      "stadium": "Estádio de Nova York/Nova Jersey",
+      "city": "Nova Jersey",
+      "date": "2026-06-13",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "bee2dff5e5323a1a",
+      "match_index": 7,
+      "home_team": {
+        "code": "HAI",
+        "name": "Haiti",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI"
+      },
+      "away_team": {
+        "code": "SCO",
+        "name": "Escócia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SCO"
+      },
+      "score_home": "0",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo C",
+      "stadium": "Estádio de Boston",
+      "city": "Boston",
+      "date": "2026-06-13",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "7260722e9a6c42d6",
+      "match_index": 8,
+      "home_team": {
+        "code": "AUS",
+        "name": "Austrália",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS"
+      },
+      "away_team": {
+        "code": "TUR",
+        "name": "Turquia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUR"
+      },
+      "score_home": "2",
+      "score_away": "0",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo D",
+      "stadium": "BC Place de Vancouver",
+      "city": "Vancouver",
+      "date": "2026-06-14",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "c3385fb37be9ed8a",
+      "match_index": 9,
+      "home_team": {
+        "code": "GER",
+        "name": "Alemanha",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER"
+      },
+      "away_team": {
+        "code": "CUW",
+        "name": "Curaçau",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CUW"
+      },
+      "score_home": "7",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo E",
+      "stadium": "Estádio de Houston",
+      "city": "Houston",
+      "date": "2026-06-14",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "327bd50f1767d271",
+      "match_index": 10,
+      "home_team": {
+        "code": "NED",
+        "name": "Holanda",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED"
+      },
+      "away_team": {
+        "code": "JPN",
+        "name": "Japão",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN"
+      },
+      "score_home": "2",
+      "score_away": "2",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo F",
+      "stadium": "Estádio de Dallas",
+      "city": "Dallas",
+      "date": "2026-06-14",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "2a12e8b3d4c412bc",
+      "match_index": 11,
+      "home_team": {
+        "code": "CIV",
+        "name": "Costa do Marfim",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV"
+      },
+      "away_team": {
+        "code": "ECU",
+        "name": "Equador",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ECU"
+      },
+      "score_home": "1",
+      "score_away": "0",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo E",
+      "stadium": "Estádio de Filadélfia",
+      "city": "Filadélfia",
+      "date": "2026-06-14",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "96e50f2eaedf605a",
+      "match_index": 12,
+      "home_team": {
+        "code": "SWE",
+        "name": "Suécia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
+      },
+      "away_team": {
+        "code": "TUN",
+        "name": "Tunísia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUN"
+      },
+      "score_home": "5",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo F",
+      "stadium": "Estádio de Monterrey",
+      "city": "Monterrey",
+      "date": "2026-06-14",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "e5a96b16800bf140",
+      "match_index": 13,
+      "home_team": {
+        "code": "ESP",
+        "name": "Espanha",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
+      },
+      "away_team": {
+        "code": "CPV",
+        "name": "Cabo Verde",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CPV"
+      },
+      "score_home": "0",
+      "score_away": "0",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo H",
+      "stadium": "Estádio de Atlanta",
+      "city": "Atlanta",
+      "date": "2026-06-15",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "aceb04711dde4082",
+      "match_index": 14,
+      "home_team": {
+        "code": "BEL",
+        "name": "Bélgica",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
+      },
+      "away_team": {
+        "code": "EGY",
+        "name": "Egito",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY"
+      },
+      "score_home": "1",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo G",
+      "stadium": "Estádio de Seattle",
+      "city": "Seattle",
+      "date": "2026-06-15",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "e20dc7c880a31c4f",
+      "match_index": 15,
+      "home_team": {
+        "code": "KSA",
+        "name": "Arábia Saudita",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/KSA"
+      },
+      "away_team": {
+        "code": "URU",
+        "name": "Uruguai",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/URU"
+      },
+      "score_home": "1",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo H",
+      "stadium": "Estádio de Miami",
+      "city": "Miami",
+      "date": "2026-06-15",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "85ec8b83c87798d7",
+      "match_index": 16,
+      "home_team": {
+        "code": "IRN",
+        "name": "RI do Irã",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN"
+      },
+      "away_team": {
+        "code": "NZL",
+        "name": "Nova Zelândia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/NZL"
+      },
+      "score_home": "2",
+      "score_away": "2",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo G",
+      "stadium": "Estádio de Los Angeles",
+      "city": "Los Angeles",
+      "date": "2026-06-15",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "a0d3c298924a78a4",
+      "match_index": 17,
+      "home_team": {
+        "code": "FRA",
+        "name": "França",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
+      },
+      "away_team": {
+        "code": "SEN",
+        "name": "Senegal",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN"
+      },
+      "score_home": "3",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo I",
+      "stadium": "Estádio de Nova York/Nova Jersey",
+      "city": "Nova Jersey",
+      "date": "2026-06-16",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "b24a1ddc5e5a5f4b",
+      "match_index": 18,
+      "home_team": {
+        "code": "IRQ",
+        "name": "Iraque",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRQ"
+      },
+      "away_team": {
+        "code": "NOR",
+        "name": "Noruega",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR"
+      },
+      "score_home": "1",
+      "score_away": "4",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo I",
+      "stadium": "Estádio de Boston",
+      "city": "Boston",
+      "date": "2026-06-16",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "efd10435a65e6f71",
+      "match_index": 19,
+      "home_team": {
+        "code": "ARG",
+        "name": "Argentina",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
+      },
+      "away_team": {
+        "code": "ALG",
+        "name": "Argélia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG"
+      },
+      "score_home": "3",
+      "score_away": "0",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo J",
+      "stadium": "Estádio de Kansas City",
+      "city": "Kansas City",
+      "date": "2026-06-16",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "d04355d07c46cd48",
+      "match_index": 20,
+      "home_team": {
+        "code": "AUT",
+        "name": "Áustria",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT"
+      },
+      "away_team": {
+        "code": "JOR",
+        "name": "Jordânia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/JOR"
+      },
+      "score_home": "3",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo J",
+      "stadium": "Estádio da Baía de São Francisco",
+      "city": "Área da baía de São Francisco",
+      "date": "2026-06-17",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "bc25aae7ac91b695",
+      "match_index": 21,
+      "home_team": {
+        "code": "POR",
+        "name": "Portugal",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/POR"
+      },
+      "away_team": {
+        "code": "COD",
+        "name": "RD do Congo",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
+      },
+      "score_home": "1",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo K",
+      "stadium": "Estádio de Houston",
+      "city": "Houston",
+      "date": "2026-06-17",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "f3a952fed6d7fcfa",
+      "match_index": 22,
+      "home_team": {
+        "code": "ENG",
+        "name": "Inglaterra",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG"
+      },
+      "away_team": {
+        "code": "CRO",
+        "name": "Croácia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CRO"
+      },
+      "score_home": "4",
+      "score_away": "2",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo L",
+      "stadium": "Estádio de Dallas",
+      "city": "Dallas",
+      "date": "2026-06-17",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "919a180fcbb6fefe",
+      "match_index": 23,
+      "home_team": {
+        "code": "GHA",
+        "name": "Gana",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/GHA"
+      },
+      "away_team": {
+        "code": "PAN",
+        "name": "Panamá",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAN"
+      },
+      "score_home": "1",
+      "score_away": "0",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo L",
+      "stadium": "Estádio de Toronto",
+      "city": "Toronto",
+      "date": "2026-06-17",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "3f42dd243032683b",
+      "match_index": 24,
+      "home_team": {
+        "code": "UZB",
+        "name": "Uzbequistão",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB"
+      },
+      "away_team": {
+        "code": "COL",
+        "name": "Colômbia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL"
+      },
+      "score_home": "1",
+      "score_away": "3",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo K",
+      "stadium": "Estádio da Cidade do México",
+      "city": "Cidade do México",
+      "date": "2026-06-17",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "170dd71b40430322",
+      "match_index": 25,
+      "home_team": {
+        "code": "CZE",
+        "name": "Tchéquia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CZE"
+      },
+      "away_team": {
+        "code": "RSA",
+        "name": "África do Sul",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA"
+      },
+      "score_home": "1",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo A",
+      "stadium": "Estádio de Atlanta",
+      "city": "Atlanta",
+      "date": "2026-06-18",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "2df2c2d7a32b9bb2",
+      "match_index": 26,
+      "home_team": {
+        "code": "SUI",
+        "name": "Suíça",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
+      },
+      "away_team": {
+        "code": "BIH",
+        "name": "Bósnia e Herzegovina",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/BIH"
+      },
+      "score_home": "4",
+      "score_away": "1",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo B",
+      "stadium": "Estádio de Los Angeles",
+      "city": "Los Angeles",
+      "date": "2026-06-18",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "cb54efd8d8122437",
+      "match_index": 27,
+      "home_team": {
+        "code": "CAN",
+        "name": "Canadá",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN"
+      },
+      "away_team": {
+        "code": "QAT",
+        "name": "Catar",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/QAT"
+      },
+      "score_home": "6",
+      "score_away": "0",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo B",
+      "stadium": "BC Place de Vancouver",
+      "city": "Vancouver",
+      "date": "2026-06-18",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "63a9bd67e9270b19",
+      "match_index": 28,
+      "home_team": {
+        "code": "MEX",
+        "name": "México",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX"
+      },
+      "away_team": {
+        "code": "KOR",
+        "name": "República da Coreia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR"
+      },
+      "score_home": "1",
+      "score_away": "0",
+      "status": "FIM",
+      "kick_off_time": null,
+      "phase": "Primeira fase",
+      "group": "Grupo A",
+      "stadium": "Estádio de Guadalajara",
+      "city": "Guadalajara",
+      "date": "2026-06-18",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "209d6ff6e6d3707c",
+      "match_index": 29,
+      "home_team": {
+        "code": "USA",
+        "name": "EUA",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA"
+      },
+      "away_team": {
+        "code": "AUS",
+        "name": "Austrália",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Primeira fase",
+      "group": "Grupo D",
+      "stadium": "Estádio de Seattle",
+      "city": "Seattle",
+      "date": "2026-06-19",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "ea9522f2daa07a35",
+      "match_index": 30,
+      "home_team": {
+        "code": "SCO",
+        "name": "Escócia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SCO"
+      },
+      "away_team": {
+        "code": "MAR",
+        "name": "Marrocos",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "19:00",
+      "phase": "Primeira fase",
+      "group": "Grupo C",
+      "stadium": "Estádio de Boston",
+      "city": "Boston",
+      "date": "2026-06-19",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "5cd2bb73bce24b49",
+      "match_index": 31,
+      "home_team": {
+        "code": "BRA",
+        "name": "Brasil",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
+      },
+      "away_team": {
+        "code": "HAI",
+        "name": "Haiti",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "21:30",
+      "phase": "Primeira fase",
+      "group": "Grupo C",
+      "stadium": "Estádio de Filadélfia",
+      "city": "Filadélfia",
+      "date": "2026-06-19",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "6de09e7024e9a838",
+      "match_index": 32,
+      "home_team": {
+        "code": "TUR",
+        "name": "Turquia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUR"
+      },
+      "away_team": {
+        "code": "PAR",
+        "name": "Paraguai",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAR"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "00:00",
+      "phase": "Primeira fase",
+      "group": "Grupo D",
+      "stadium": "Estádio da Baía de São Francisco",
+      "city": "Área da baía de São Francisco",
+      "date": "2026-06-20",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "f3e19e67e2d55614",
+      "match_index": 33,
+      "home_team": {
+        "code": "NED",
+        "name": "Holanda",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED"
+      },
+      "away_team": {
+        "code": "SWE",
+        "name": "Suécia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "14:00",
+      "phase": "Primeira fase",
+      "group": "Grupo F",
+      "stadium": "Estádio de Houston",
+      "city": "Houston",
+      "date": "2026-06-20",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "efb91376be84fe90",
+      "match_index": 34,
+      "home_team": {
+        "code": "GER",
+        "name": "Alemanha",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER"
+      },
+      "away_team": {
+        "code": "CIV",
+        "name": "Costa do Marfim",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "17:00",
+      "phase": "Primeira fase",
+      "group": "Grupo E",
+      "stadium": "Estádio de Toronto",
+      "city": "Toronto",
+      "date": "2026-06-20",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "70c2fca0e3dd6756",
+      "match_index": 35,
+      "home_team": {
+        "code": "ECU",
+        "name": "Equador",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ECU"
+      },
+      "away_team": {
+        "code": "CUW",
+        "name": "Curaçau",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CUW"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "21:00",
+      "phase": "Primeira fase",
+      "group": "Grupo E",
+      "stadium": "Estádio de Kansas City",
+      "city": "Kansas City",
+      "date": "2026-06-20",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "fc1e9f528160e6c8",
+      "match_index": 36,
+      "home_team": {
+        "code": "TUN",
+        "name": "Tunísia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUN"
+      },
+      "away_team": {
+        "code": "JPN",
+        "name": "Japão",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "01:00",
+      "phase": "Primeira fase",
+      "group": "Grupo F",
+      "stadium": "Estádio de Monterrey",
+      "city": "Monterrey",
+      "date": "2026-06-21",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "69c0a69fb56781ef",
+      "match_index": 37,
+      "home_team": {
+        "code": "ESP",
+        "name": "Espanha",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
+      },
+      "away_team": {
+        "code": "KSA",
+        "name": "Arábia Saudita",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/KSA"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "13:00",
+      "phase": "Primeira fase",
+      "group": "Grupo H",
+      "stadium": "Estádio de Atlanta",
+      "city": "Atlanta",
+      "date": "2026-06-21",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "d8603638da054fd5",
+      "match_index": 38,
+      "home_team": {
+        "code": "BEL",
+        "name": "Bélgica",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
+      },
+      "away_team": {
+        "code": "IRN",
+        "name": "RI do Irã",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Primeira fase",
+      "group": "Grupo G",
+      "stadium": "Estádio de Los Angeles",
+      "city": "Los Angeles",
+      "date": "2026-06-21",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "5aa133c08e0101ec",
+      "match_index": 39,
+      "home_team": {
+        "code": "URU",
+        "name": "Uruguai",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/URU"
+      },
+      "away_team": {
+        "code": "CPV",
+        "name": "Cabo Verde",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CPV"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "19:00",
+      "phase": "Primeira fase",
+      "group": "Grupo H",
+      "stadium": "Estádio de Miami",
+      "city": "Miami",
+      "date": "2026-06-21",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "c17a918a8d906d6c",
+      "match_index": 40,
+      "home_team": {
+        "code": "NZL",
+        "name": "Nova Zelândia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/NZL"
+      },
+      "away_team": {
+        "code": "EGY",
+        "name": "Egito",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "22:00",
+      "phase": "Primeira fase",
+      "group": "Grupo G",
+      "stadium": "BC Place de Vancouver",
+      "city": "Vancouver",
+      "date": "2026-06-21",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "be5843a69d8064af",
+      "match_index": 41,
+      "home_team": {
+        "code": "ARG",
+        "name": "Argentina",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
+      },
+      "away_team": {
+        "code": "AUT",
+        "name": "Áustria",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "14:00",
+      "phase": "Primeira fase",
+      "group": "Grupo J",
+      "stadium": "Estádio de Dallas",
+      "city": "Dallas",
+      "date": "2026-06-22",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "ba598040394f1158",
+      "match_index": 42,
+      "home_team": {
+        "code": "FRA",
+        "name": "França",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
+      },
+      "away_team": {
+        "code": "IRQ",
+        "name": "Iraque",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRQ"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "18:00",
+      "phase": "Primeira fase",
+      "group": "Grupo I",
+      "stadium": "Estádio de Filadélfia",
+      "city": "Filadélfia",
+      "date": "2026-06-22",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "c4bb16d3b7fffbb7",
+      "match_index": 43,
+      "home_team": {
+        "code": "NOR",
+        "name": "Noruega",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR"
+      },
+      "away_team": {
+        "code": "SEN",
+        "name": "Senegal",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "21:00",
+      "phase": "Primeira fase",
+      "group": "Grupo I",
+      "stadium": "Estádio de Nova York/Nova Jersey",
+      "city": "Nova Jersey",
+      "date": "2026-06-22",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "739b189332ee2af4",
+      "match_index": 44,
+      "home_team": {
+        "code": "JOR",
+        "name": "Jordânia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/JOR"
+      },
+      "away_team": {
+        "code": "ALG",
+        "name": "Argélia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "00:00",
+      "phase": "Primeira fase",
+      "group": "Grupo J",
+      "stadium": "Estádio da Baía de São Francisco",
+      "city": "Área da baía de São Francisco",
+      "date": "2026-06-23",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "82d898fa1f314a83",
+      "match_index": 45,
+      "home_team": {
+        "code": "POR",
+        "name": "Portugal",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/POR"
+      },
+      "away_team": {
+        "code": "UZB",
+        "name": "Uzbequistão",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "14:00",
+      "phase": "Primeira fase",
+      "group": "Grupo K",
+      "stadium": "Estádio de Houston",
+      "city": "Houston",
+      "date": "2026-06-23",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "d4d0bbc2b7d2dc9a",
+      "match_index": 46,
+      "home_team": {
+        "code": "ENG",
+        "name": "Inglaterra",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG"
+      },
+      "away_team": {
+        "code": "GHA",
+        "name": "Gana",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/GHA"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "17:00",
+      "phase": "Primeira fase",
+      "group": "Grupo L",
+      "stadium": "Estádio de Boston",
+      "city": "Boston",
+      "date": "2026-06-23",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "02dd2873feb506fa",
+      "match_index": 47,
+      "home_team": {
+        "code": "PAN",
+        "name": "Panamá",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAN"
+      },
+      "away_team": {
+        "code": "CRO",
+        "name": "Croácia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CRO"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "20:00",
+      "phase": "Primeira fase",
+      "group": "Grupo L",
+      "stadium": "Estádio de Toronto",
+      "city": "Toronto",
+      "date": "2026-06-23",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "7f511a1f7fa25318",
+      "match_index": 48,
+      "home_team": {
+        "code": "COL",
+        "name": "Colômbia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL"
+      },
+      "away_team": {
+        "code": "COD",
+        "name": "RD do Congo",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "23:00",
+      "phase": "Primeira fase",
+      "group": "Grupo K",
+      "stadium": "Estádio de Guadalajara",
+      "city": "Guadalajara",
+      "date": "2026-06-23",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "7aaedb2dc6ad765b",
+      "match_index": 49,
+      "home_team": {
+        "code": "SUI",
+        "name": "Suíça",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SUI"
+      },
+      "away_team": {
+        "code": "CAN",
+        "name": "Canadá",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CAN"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Primeira fase",
+      "group": "Grupo B",
+      "stadium": "BC Place de Vancouver",
+      "city": "Vancouver",
+      "date": "2026-06-24",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "944f5c69cd16e2c0",
+      "match_index": 50,
+      "home_team": {
+        "code": "BIH",
+        "name": "Bósnia e Herzegovina",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/BIH"
+      },
+      "away_team": {
+        "code": "QAT",
+        "name": "Catar",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/QAT"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Primeira fase",
+      "group": "Grupo B",
+      "stadium": "Estádio de Seattle",
+      "city": "Seattle",
+      "date": "2026-06-24",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "421c9791ae32f981",
+      "match_index": 51,
+      "home_team": {
+        "code": "SCO",
+        "name": "Escócia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SCO"
+      },
+      "away_team": {
+        "code": "BRA",
+        "name": "Brasil",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/BRA"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "19:00",
+      "phase": "Primeira fase",
+      "group": "Grupo C",
+      "stadium": "Estádio de Miami",
+      "city": "Miami",
+      "date": "2026-06-24",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "066817382d10d501",
+      "match_index": 52,
+      "home_team": {
+        "code": "MAR",
+        "name": "Marrocos",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/MAR"
+      },
+      "away_team": {
+        "code": "HAI",
+        "name": "Haiti",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/HAI"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "19:00",
+      "phase": "Primeira fase",
+      "group": "Grupo C",
+      "stadium": "Estádio de Atlanta",
+      "city": "Atlanta",
+      "date": "2026-06-24",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "0b8ac05021ed0680",
+      "match_index": 53,
+      "home_team": {
+        "code": "CZE",
+        "name": "Tchéquia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CZE"
+      },
+      "away_team": {
+        "code": "MEX",
+        "name": "México",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "22:00",
+      "phase": "Primeira fase",
+      "group": "Grupo A",
+      "stadium": "Estádio da Cidade do México",
+      "city": "Cidade do México",
+      "date": "2026-06-24",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "3c21d7ddaf00da68",
+      "match_index": 54,
+      "home_team": {
+        "code": "RSA",
+        "name": "África do Sul",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/RSA"
+      },
+      "away_team": {
+        "code": "KOR",
+        "name": "República da Coreia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/KOR"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "22:00",
+      "phase": "Primeira fase",
+      "group": "Grupo A",
+      "stadium": "Estádio de Monterrey",
+      "city": "Monterrey",
+      "date": "2026-06-24",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "0154129aa88471c3",
+      "match_index": 55,
+      "home_team": {
+        "code": "CUW",
+        "name": "Curaçau",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CUW"
+      },
+      "away_team": {
+        "code": "CIV",
+        "name": "Costa do Marfim",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CIV"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "17:00",
+      "phase": "Primeira fase",
+      "group": "Grupo E",
+      "stadium": "Estádio de Filadélfia",
+      "city": "Filadélfia",
+      "date": "2026-06-25",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "f7eb57521a345ad7",
+      "match_index": 56,
+      "home_team": {
+        "code": "ECU",
+        "name": "Equador",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ECU"
+      },
+      "away_team": {
+        "code": "GER",
+        "name": "Alemanha",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/GER"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "17:00",
+      "phase": "Primeira fase",
+      "group": "Grupo E",
+      "stadium": "Estádio de Nova York/Nova Jersey",
+      "city": "Nova Jersey",
+      "date": "2026-06-25",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "cb5314adcb3b0092",
+      "match_index": 57,
+      "home_team": {
+        "code": "JPN",
+        "name": "Japão",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/JPN"
+      },
+      "away_team": {
+        "code": "SWE",
+        "name": "Suécia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SWE"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "20:00",
+      "phase": "Primeira fase",
+      "group": "Grupo F",
+      "stadium": "Estádio de Dallas",
+      "city": "Dallas",
+      "date": "2026-06-25",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "9ac373a8188193d8",
+      "match_index": 58,
+      "home_team": {
+        "code": "TUN",
+        "name": "Tunísia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUN"
+      },
+      "away_team": {
+        "code": "NED",
+        "name": "Holanda",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/NED"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "20:00",
+      "phase": "Primeira fase",
+      "group": "Grupo F",
+      "stadium": "Estádio de Kansas City",
+      "city": "Kansas City",
+      "date": "2026-06-25",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "89d19922f83e683f",
+      "match_index": 59,
+      "home_team": {
+        "code": "TUR",
+        "name": "Turquia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/TUR"
+      },
+      "away_team": {
+        "code": "USA",
+        "name": "EUA",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/USA"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "23:00",
+      "phase": "Primeira fase",
+      "group": "Grupo D",
+      "stadium": "Estádio de Los Angeles",
+      "city": "Los Angeles",
+      "date": "2026-06-25",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "a166c30c6acc5caf",
+      "match_index": 60,
+      "home_team": {
+        "code": "PAR",
+        "name": "Paraguai",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAR"
+      },
+      "away_team": {
+        "code": "AUS",
+        "name": "Austrália",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUS"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "23:00",
+      "phase": "Primeira fase",
+      "group": "Grupo D",
+      "stadium": "Estádio da Baía de São Francisco",
+      "city": "Área da baía de São Francisco",
+      "date": "2026-06-25",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "f48caac5358dfff9",
+      "match_index": 61,
+      "home_team": {
+        "code": "NOR",
+        "name": "Noruega",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/NOR"
+      },
+      "away_team": {
+        "code": "FRA",
+        "name": "França",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/FRA"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Primeira fase",
+      "group": "Grupo I",
+      "stadium": "Estádio de Boston",
+      "city": "Boston",
+      "date": "2026-06-26",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "f5565a37eba0ff84",
+      "match_index": 62,
+      "home_team": {
+        "code": "SEN",
+        "name": "Senegal",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/SEN"
+      },
+      "away_team": {
+        "code": "IRQ",
+        "name": "Iraque",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRQ"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Primeira fase",
+      "group": "Grupo I",
+      "stadium": "Estádio de Toronto",
+      "city": "Toronto",
+      "date": "2026-06-26",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "72d9fee80c63e3b6",
+      "match_index": 63,
+      "home_team": {
+        "code": "CPV",
+        "name": "Cabo Verde",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CPV"
+      },
+      "away_team": {
+        "code": "KSA",
+        "name": "Arábia Saudita",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/KSA"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "21:00",
+      "phase": "Primeira fase",
+      "group": "Grupo H",
+      "stadium": "Estádio de Houston",
+      "city": "Houston",
+      "date": "2026-06-26",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "86e7d63d5be10f4c",
+      "match_index": 64,
+      "home_team": {
+        "code": "URU",
+        "name": "Uruguai",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/URU"
+      },
+      "away_team": {
+        "code": "ESP",
+        "name": "Espanha",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ESP"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "21:00",
+      "phase": "Primeira fase",
+      "group": "Grupo H",
+      "stadium": "Estádio de Guadalajara",
+      "city": "Guadalajara",
+      "date": "2026-06-26",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "88ae9476eb317ac7",
+      "match_index": 65,
+      "home_team": {
+        "code": "EGY",
+        "name": "Egito",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/EGY"
+      },
+      "away_team": {
+        "code": "IRN",
+        "name": "RI do Irã",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/IRN"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "00:00",
+      "phase": "Primeira fase",
+      "group": "Grupo G",
+      "stadium": "Estádio de Seattle",
+      "city": "Seattle",
+      "date": "2026-06-27",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "97628d4a30daa725",
+      "match_index": 66,
+      "home_team": {
+        "code": "NZL",
+        "name": "Nova Zelândia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/NZL"
+      },
+      "away_team": {
+        "code": "BEL",
+        "name": "Bélgica",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/BEL"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "00:00",
+      "phase": "Primeira fase",
+      "group": "Grupo G",
+      "stadium": "BC Place de Vancouver",
+      "city": "Vancouver",
+      "date": "2026-06-27",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "05b698ffa8bb86da",
+      "match_index": 67,
+      "home_team": {
+        "code": "PAN",
+        "name": "Panamá",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/PAN"
+      },
+      "away_team": {
+        "code": "ENG",
+        "name": "Inglaterra",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ENG"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "18:00",
+      "phase": "Primeira fase",
+      "group": "Grupo L",
+      "stadium": "Estádio de Nova York/Nova Jersey",
+      "city": "Nova Jersey",
+      "date": "2026-06-27",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "5383e1a2d7c2fea1",
+      "match_index": 68,
+      "home_team": {
+        "code": "CRO",
+        "name": "Croácia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/CRO"
+      },
+      "away_team": {
+        "code": "GHA",
+        "name": "Gana",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/GHA"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "18:00",
+      "phase": "Primeira fase",
+      "group": "Grupo L",
+      "stadium": "Estádio de Filadélfia",
+      "city": "Filadélfia",
+      "date": "2026-06-27",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "0eae281aa84e33a5",
+      "match_index": 69,
+      "home_team": {
+        "code": "COL",
+        "name": "Colômbia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/COL"
+      },
+      "away_team": {
+        "code": "POR",
+        "name": "Portugal",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/POR"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "20:30",
+      "phase": "Primeira fase",
+      "group": "Grupo K",
+      "stadium": "Estádio de Miami",
+      "city": "Miami",
+      "date": "2026-06-27",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "ae71eeb55da59772",
+      "match_index": 70,
+      "home_team": {
+        "code": "COD",
+        "name": "RD do Congo",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/COD"
+      },
+      "away_team": {
+        "code": "UZB",
+        "name": "Uzbequistão",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/UZB"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "20:30",
+      "phase": "Primeira fase",
+      "group": "Grupo K",
+      "stadium": "Estádio de Atlanta",
+      "city": "Atlanta",
+      "date": "2026-06-27",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "f92a19105b1a8984",
+      "match_index": 71,
+      "home_team": {
+        "code": "ALG",
+        "name": "Argélia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ALG"
+      },
+      "away_team": {
+        "code": "AUT",
+        "name": "Áustria",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/AUT"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "23:00",
+      "phase": "Primeira fase",
+      "group": "Grupo J",
+      "stadium": "Estádio de Kansas City",
+      "city": "Kansas City",
+      "date": "2026-06-27",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "dc3dd71d60b795ec",
+      "match_index": 72,
+      "home_team": {
+        "code": "JOR",
+        "name": "Jordânia",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/JOR"
+      },
+      "away_team": {
+        "code": "ARG",
+        "name": "Argentina",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/ARG"
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "23:00",
+      "phase": "Primeira fase",
+      "group": "Grupo J",
+      "stadium": "Estádio de Dallas",
+      "city": "Dallas",
+      "date": "2026-06-27",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "656a51f9067191f0",
+      "match_index": 73,
+      "home_team": {
+        "code": "2A",
+        "name": "2A",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "2B",
+        "name": "2B",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Los Angeles",
+      "city": "Los Angeles",
+      "date": "2026-06-28",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "136c0dea3432f0f0",
+      "match_index": 74,
+      "home_team": {
+        "code": "1C",
+        "name": "1C",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "2F",
+        "name": "2F",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "14:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Houston",
+      "city": "Houston",
+      "date": "2026-06-29",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "08d2733c15ff08ca",
+      "match_index": 75,
+      "home_team": {
+        "code": "1E",
+        "name": "1E",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "3ABCDF",
+        "name": "3ABCDF",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "17:30",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Boston",
+      "city": "Boston",
+      "date": "2026-06-29",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "80bb29b27a83861f",
+      "match_index": 76,
+      "home_team": {
+        "code": "1F",
+        "name": "1F",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "2C",
+        "name": "2C",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "22:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Monterrey",
+      "city": "Monterrey",
+      "date": "2026-06-29",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "b4372b66ffcab2fe",
+      "match_index": 77,
+      "home_team": {
+        "code": "2E",
+        "name": "2E",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "2I",
+        "name": "2I",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "14:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Dallas",
+      "city": "Dallas",
+      "date": "2026-06-30",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "f9c3261c642d5f4c",
+      "match_index": 78,
+      "home_team": {
+        "code": "1I",
+        "name": "1I",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "3CDFGH",
+        "name": "3CDFGH",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "18:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Nova York/Nova Jersey",
+      "city": "Nova Jersey",
+      "date": "2026-06-30",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "a62dd6f6b7a60a9f",
+      "match_index": 79,
+      "home_team": {
+        "code": "MEX",
+        "name": "México",
+        "flag_url": "https://api.fifa.com/api/v3/picture/flags-sq-1/MEX"
+      },
+      "away_team": {
+        "code": "3CEFHI",
+        "name": "3CEFHI",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "22:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio da Cidade do México",
+      "city": "Cidade do México",
+      "date": "2026-06-30",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "3e28606ffeb91a55",
+      "match_index": 80,
+      "home_team": {
+        "code": "1L",
+        "name": "1L",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "3EHIJK",
+        "name": "3EHIJK",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "13:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Atlanta",
+      "city": "Atlanta",
+      "date": "2026-07-01",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "270944f8f6c6b7c5",
+      "match_index": 81,
+      "home_team": {
+        "code": "1G",
+        "name": "1G",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "3AEHIJ",
+        "name": "3AEHIJ",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "17:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Seattle",
+      "city": "Seattle",
+      "date": "2026-07-01",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "92b6c67616cc41e3",
+      "match_index": 82,
+      "home_team": {
+        "code": "1D",
+        "name": "1D",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "3BEFIJ",
+        "name": "3BEFIJ",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "21:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio da Baía de São Francisco",
+      "city": "Área da baía de São Francisco",
+      "date": "2026-07-01",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "ca859dd8b546e453",
+      "match_index": 83,
+      "home_team": {
+        "code": "1H",
+        "name": "1H",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "2J",
+        "name": "2J",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Los Angeles",
+      "city": "Los Angeles",
+      "date": "2026-07-02",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "8167f06cafd53dc4",
+      "match_index": 84,
+      "home_team": {
+        "code": "2K",
+        "name": "2K",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "2L",
+        "name": "2L",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "20:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Toronto",
+      "city": "Toronto",
+      "date": "2026-07-02",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "e8c63a879995d94b",
+      "match_index": 85,
+      "home_team": {
+        "code": "1B",
+        "name": "1B",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "3EFGIJ",
+        "name": "3EFGIJ",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "00:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "BC Place de Vancouver",
+      "city": "Vancouver",
+      "date": "2026-07-03",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "f19809026ec982d9",
+      "match_index": 86,
+      "home_team": {
+        "code": "2D",
+        "name": "2D",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "2G",
+        "name": "2G",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "15:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Dallas",
+      "city": "Dallas",
+      "date": "2026-07-03",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "e3e22c5bddf44c37",
+      "match_index": 87,
+      "home_team": {
+        "code": "1J",
+        "name": "1J",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "2H",
+        "name": "2H",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "19:00",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Miami",
+      "city": "Miami",
+      "date": "2026-07-03",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "85874f8771c9a157",
+      "match_index": 88,
+      "home_team": {
+        "code": "1K",
+        "name": "1K",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "3DEIJL",
+        "name": "3DEIJL",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "22:30",
+      "phase": "Segundas de final",
+      "group": null,
+      "stadium": "Estádio de Kansas City",
+      "city": "Kansas City",
+      "date": "2026-07-03",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "a4d8dca0ab565e1b",
+      "match_index": 89,
+      "home_team": {
+        "code": "W73",
+        "name": "W73",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W75",
+        "name": "W75",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "14:00",
+      "phase": "Oitavas de final",
+      "group": null,
+      "stadium": "Estádio de Houston",
+      "city": "Houston",
+      "date": "2026-07-04",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "c7b893896d8c83bf",
+      "match_index": 90,
+      "home_team": {
+        "code": "W74",
+        "name": "W74",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W77",
+        "name": "W77",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "18:00",
+      "phase": "Oitavas de final",
+      "group": null,
+      "stadium": "Estádio de Filadélfia",
+      "city": "Filadélfia",
+      "date": "2026-07-04",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "36f265286e702fb2",
+      "match_index": 91,
+      "home_team": {
+        "code": "W76",
+        "name": "W76",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W78",
+        "name": "W78",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "17:00",
+      "phase": "Oitavas de final",
+      "group": null,
+      "stadium": "Estádio de Nova York/Nova Jersey",
+      "city": "Nova Jersey",
+      "date": "2026-07-05",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "dad3b874f0011136",
+      "match_index": 92,
+      "home_team": {
+        "code": "W79",
+        "name": "W79",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W80",
+        "name": "W80",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "21:00",
+      "phase": "Oitavas de final",
+      "group": null,
+      "stadium": "Estádio da Cidade do México",
+      "city": "Cidade do México",
+      "date": "2026-07-05",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "f237b1c02fabedbd",
+      "match_index": 93,
+      "home_team": {
+        "code": "W83",
+        "name": "W83",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W84",
+        "name": "W84",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Oitavas de final",
+      "group": null,
+      "stadium": "Estádio de Dallas",
+      "city": "Dallas",
+      "date": "2026-07-06",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "740b5104d25e0506",
+      "match_index": 94,
+      "home_team": {
+        "code": "W81",
+        "name": "W81",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W82",
+        "name": "W82",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "21:00",
+      "phase": "Oitavas de final",
+      "group": null,
+      "stadium": "Estádio de Seattle",
+      "city": "Seattle",
+      "date": "2026-07-06",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "21f060450409abd3",
+      "match_index": 95,
+      "home_team": {
+        "code": "W86",
+        "name": "W86",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W88",
+        "name": "W88",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "13:00",
+      "phase": "Oitavas de final",
+      "group": null,
+      "stadium": "Estádio de Atlanta",
+      "city": "Atlanta",
+      "date": "2026-07-07",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "0484d1f773b2f5cc",
+      "match_index": 96,
+      "home_team": {
+        "code": "W85",
+        "name": "W85",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W87",
+        "name": "W87",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "17:00",
+      "phase": "Oitavas de final",
+      "group": null,
+      "stadium": "BC Place de Vancouver",
+      "city": "Vancouver",
+      "date": "2026-07-07",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "d936a88d837fb049",
+      "match_index": 97,
+      "home_team": {
+        "code": "W89",
+        "name": "W89",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W90",
+        "name": "W90",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "17:00",
+      "phase": "Quartas de final",
+      "group": null,
+      "stadium": "Estádio de Boston",
+      "city": "Boston",
+      "date": "2026-07-09",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "4722689124530b19",
+      "match_index": 98,
+      "home_team": {
+        "code": "W93",
+        "name": "W93",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W94",
+        "name": "W94",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Quartas de final",
+      "group": null,
+      "stadium": "Estádio de Los Angeles",
+      "city": "Los Angeles",
+      "date": "2026-07-10",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "2038021e46c2478f",
+      "match_index": 99,
+      "home_team": {
+        "code": "W91",
+        "name": "W91",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W92",
+        "name": "W92",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "18:00",
+      "phase": "Quartas de final",
+      "group": null,
+      "stadium": "Estádio de Miami",
+      "city": "Miami",
+      "date": "2026-07-11",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "6ff8b96ff1904d72",
+      "match_index": 100,
+      "home_team": {
+        "code": "W95",
+        "name": "W95",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W96",
+        "name": "W96",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "22:00",
+      "phase": "Quartas de final",
+      "group": null,
+      "stadium": "Estádio de Kansas City",
+      "city": "Kansas City",
+      "date": "2026-07-11",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "cead0104f01cbd28",
+      "match_index": 101,
+      "home_team": {
+        "code": "W97",
+        "name": "W97",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W98",
+        "name": "W98",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Semifinal",
+      "group": null,
+      "stadium": "Estádio de Dallas",
+      "city": "Dallas",
+      "date": "2026-07-14",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "ed19ee761b511644",
+      "match_index": 102,
+      "home_team": {
+        "code": "W99",
+        "name": "W99",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W100",
+        "name": "W100",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Semifinal",
+      "group": null,
+      "stadium": "Estádio de Atlanta",
+      "city": "Atlanta",
+      "date": "2026-07-15",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "a0c12303230100ac",
+      "match_index": 103,
+      "home_team": {
+        "code": "RU101",
+        "name": "RU101",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "RU102",
+        "name": "RU102",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "18:00",
+      "phase": "Decisão do 3º lugar",
+      "group": null,
+      "stadium": "Estádio de Miami",
+      "city": "Miami",
+      "date": "2026-07-18",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    },
+    {
+      "match_id": "9a203c711338fe46",
+      "match_index": 104,
+      "home_team": {
+        "code": "W101",
+        "name": "W101",
+        "flag_url": null
+      },
+      "away_team": {
+        "code": "W102",
+        "name": "W102",
+        "flag_url": null
+      },
+      "score_home": null,
+      "score_away": null,
+      "status": null,
+      "kick_off_time": "16:00",
+      "phase": "Final",
+      "group": null,
+      "stadium": "Estádio de Nova York/Nova Jersey",
+      "city": "Nova Jersey",
+      "date": "2026-07-19",
+      "source_url": "https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=BR&wtw-filter=ALL"
+    }
+  ]
+}

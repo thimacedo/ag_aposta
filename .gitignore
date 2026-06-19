@@ -1,0 +1,19 @@
+# Ambiente
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Banco de dados local (dados sensíveis/voláteis, não versionar)
+data/*.db
+data/*.sqlite3
+
+# Streamlit
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+
+.env.example
